@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.modelo.dto.MatriculaDTO;
 import com.example.demo.repo.IEstudianteRepo;
 import com.example.demo.repo.IMateriaRepo;
 import com.example.demo.repo.IMatriculaRepo;
@@ -52,6 +53,12 @@ public class MatriculaSerImpl implements IMatriculaSer{
 	public List<Matricula> buscarTodos() {
 		// TODO Auto-generated method stub
 		return this.matriculaRepo.buscarTodos();
+	}
+
+	@Override
+	public List<MatriculaDTO> buscarDTO() {
+		// TODO Auto-generated method stub
+		return this.matriculaRepo.buscarDTO();
 	}
 	
 

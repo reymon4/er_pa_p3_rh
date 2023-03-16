@@ -17,5 +17,7 @@ public interface IEstudianteRepo {
 	
 	
 	public Estudiante buscarPorCedula(String cedula);
+	
+
 
 }

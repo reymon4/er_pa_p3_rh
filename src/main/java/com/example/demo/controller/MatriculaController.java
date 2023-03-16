@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.demo.modelo.dto.MatriculaDTO;
 import com.example.demo.repo.modelo.Estudiante;
 import com.example.demo.repo.modelo.Materia;
 import com.example.demo.repo.modelo.Matricula;
@@ -39,7 +40,7 @@ public class MatriculaController {
 		
 		@GetMapping("/buscar")
 		public String buscarTodos(Model modelo) {
-			List<Matricula> lista = this.matriculaSer.buscarTodos();
+			List<MatriculaDTO> lista = this.matriculaSer.buscarDTO();
 			modelo.addAttribute("matriculas", lista);
 			return "vistaListaMatriculas";
 		}

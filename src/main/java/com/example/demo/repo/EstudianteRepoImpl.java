@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+
 import com.example.demo.repo.modelo.Estudiante;
 
 import jakarta.persistence.EntityManager;
@@ -53,5 +54,6 @@ public class EstudianteRepoImpl implements IEstudianteRepo {
 		return query.getResultList().get(0);
 		
 	}
+
 
 }

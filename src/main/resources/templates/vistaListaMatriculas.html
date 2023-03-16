@@ -28,12 +28,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="matricula:${matriculas}">
-				<td th:text="${matricula.estudiante.cedula}"></td>
-				<td th:text="${matricula.estudiante.nombre}"></td>
-				<td th:text="${matricula.estudiante.apellido}"></td>
-				<td th:text="${matricula.materia.nombre}"></td>
-				<td th:text="${matricula.materia.codigo}"></td>
+			<tr th:each="matriculaDTO:${matriculas}">
+				<td th:text="${matriculaDTO.cedula}"></td>
+				<td th:text="${matriculaDTO.nombre}"></td>
+				<td th:text="${matriculaDTO.apellido}"></td>
+				<td th:text="${matriculaDTO.nombreMateria}"></td>
+				<td th:text="${matriculaDTO.codigoMateria}"></td>
 			
 			</tr>
 		</tbody>

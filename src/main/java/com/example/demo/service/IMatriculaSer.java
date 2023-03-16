@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.modelo.dto.MatriculaDTO;
 import com.example.demo.repo.modelo.Matricula;
 import com.example.demo.repo.modelo.MatriculaTmp;
 
@@ -14,5 +15,8 @@ public interface IMatriculaSer {
 	
 	
 	public List<Matricula> buscarTodos();
+	
+	public List<MatriculaDTO>  buscarDTO(); 
+	
 
 }
